@@ -1,0 +1,365 @@
+{
+  "shore": {
+    "name": "Shore",
+    "tiles": [
+        "🌴","🌴","⬆","🌴","🌴",
+        " "," "," "," ","🧳",
+        "🐚"," ",""," ","⛱ ",
+        " "," "," "," ","",
+        " "," "," "," "," "
+    ],
+    "locations": [
+      {
+        "mapName": "beachPass",
+        "prettyName": "⬆ Beach Pass",
+        "key": "up"
+      }
+    ],
+    "interactions": [
+      {
+        "tile": 3,
+        "type": "teleport",
+        "message": "You enter the Beach Pass",
+        "mapName": "beachPass"
+      },
+      {
+        "tile": 11,
+        "type": "message",
+        "message": "It's a conch shell."
+      },
+      {
+        "tile": 10,
+        "type": "pickup",
+        "message": "It's an old sandy luggage bag.<br> You pick it up ",
+        "item": ""
+      }
+    ],
+    "sizing": [
+      {
+        "tile": 11,
+        "size": "sm"
+      }
+    ]
+  },
+
+  "beachPass": {
+    "name": "Beach Pass",
+    "tiles": [
+      "🌴","🌴","⬆","🌴","🌴",
+      "🌴","🌴"," ","🌴","🌴",
+      "🌴","🌴"," ","🌴","🌴",
+      "🌴","🌴"," ","🌴","🌴",
+      "🌴","🌴","⬇","🌴","🌴"
+    ],
+    "locations": [
+      {
+        "mapName": "villageSouth",
+        "prettyName": "⬆ Village South",
+        "key": "up"
+      },
+      {
+        "mapName": "shore",
+        "prettyName": "⬇ Shore",
+        "key": "down"
+      }
+    ],
+    "interactions": [
+      {
+        "tile": 3,
+        "type": "teleport",
+        "message": "You enter the Beach Pass",
+        "mapName": "villageSouth"
+      },
+      {
+        "tile": 23,
+        "type": "teleport",
+        "message": "You return to the shore",
+        "mapName": "shore"
+      }
+    ]
+  },
+
+  "villageNorth": {
+    "name": "Village - North",
+    "tiles": [
+        "🏠"," ","⬆","🌴","🌴",
+        "🏠"," "," ",""," ",
+        "🏠"," ","⛲️"," ","⮕",
+        "⬅"," "," "," ","🌴",
+        "🌴","🌴","⬇","🌴","🌴"
+    ],
+    "locations": [
+      {
+        "mapName": "villageNorth",
+        "prettyName": "⬆ Village North"
+      },
+      {
+        "mapName": "villageWest",
+        "prettyName": "⬅ Village West"
+      },
+      {
+        "mapName": "villageEast",
+        "prettyName": "⮕ Village East"
+      },
+      {
+        "mapName": "beachPass",
+        "prettyName": "⬇ Beach Pass"
+      }
+    ],
+    "interactions": [
+      {
+        "tile": 3,
+        "type": "teleport",
+        "message": "",
+        "mapName": "villageNorth"
+      },
+      {
+        "tile": 15,
+        "type": "teleport",
+        "message": "",
+        "mapName": "villageEast"
+      },
+      {
+        "tile": 16,
+        "type": "teleport",
+        "message": "",
+        "mapName": "villageWest"
+      },
+      {
+        "tile": 23,
+        "type": "teleport",
+        "message": "You return to the Beach Pass",
+        "mapName": "beachPass"
+      }
+    ]
+  },
+  "villageSouth": {
+    "name": "Village - South",
+    "playerPos": "row-4-col-3",
+    "tiles": [
+        "🏠"," ","⬆","🌴","🌴",
+        "🏠"," "," ","👮🏽‍♀️","🚓",
+        "🏠"," ","⛲️"," ","⮕",
+        "⬅"," "," "," ","🌴",
+        "🌴","🌴","⬇","🌴","🌴"
+    ],
+    "locations": [
+      {
+        "mapName": "villageNorth",
+        "prettyName": "⬆ Village North",
+        "key": "up"
+      },
+      {
+        "mapName": "villageWest",
+        "prettyName": "⬅ Village West",
+        "key": "left"
+      },
+      {
+        "mapName": "villageEast",
+        "prettyName": "⮕ Village East",
+        "key": "right"
+      },
+      {
+        "mapName": "beachPass",
+        "prettyName": "⬇ Beach Pass",
+        "key": "down"
+      }
+    ],
+    "interactions": [
+      {
+        "tile": 3,
+        "type": "teleport",
+        "message": "",
+        "mapName": "villageNorth"
+      },
+      {
+        "tile": 15,
+        "type": "teleport",
+        "message": "",
+        "mapName": "villageEast"
+      },
+      {
+        "tile": 16,
+        "type": "teleport",
+        "message": "",
+        "mapName": "villageWest"
+      },
+      {
+        "tile": 23,
+        "type": "teleport",
+        "message": "You return to the Beach Pass",
+        "mapName": "beachPass"
+      },
+      {
+        "tile": 9,
+        "type": "message",
+        "actor": "Cop",
+        "message": "Move along citizen."
+      },
+      {
+        "tile": 10,
+        "type": "message",
+        "message": "Move along citizen."
+      }
+    ]
+  },
+  "villageEast": {
+    "name": "Village - East",
+    "tiles": [
+        "⛰"," ⛰","⛰","⛰","⛰",
+        "⛰","⛰","⛰","⬆","⛰",
+        "⬅"," "," "," ","🌴",
+        "🌴","","","👱🏽‍♂️","🌴",
+        "🌴", "🌴", "🌴", "🌴", "🌴"
+    ],
+    "locations": [
+      {
+        "mapName": "villageSouth",
+        "prettyName": "⬅ Village South"
+      }
+    ],
+    "interactions": [
+      {
+        "tile": 9,
+        "type": "teleport",
+        "message": "You enter the mountain caves.",
+        "mapName": "mountainCaves"
+      },
+      {
+        "tile": 11,
+        "type": "teleport",
+        "message": "You enter the mountain caves.",
+        "mapName": "villageSouth"
+      }
+    ]
+  },
+  "villageWest": {
+    "name": "Village - West",
+    "tiles": [
+        "⛰"," ⛰","⛰","🏚","🏠",
+        "⛰","⛰","🏪"," ","🏠",
+        "⛰"," "," "," ","🏠",
+        "⛰","",""," ","⮕",
+        "🌴", "🌴", "🌴", "🌴", "🌴"
+    ],
+    "locations": [
+      {
+        "mapName": "villageSouth",
+        "prettyName": "⮕ Village South",
+        "key": "right"
+      }
+    ],
+    "interactions": [
+      {
+        "tile": 4,
+        "type": "teleport",
+        "message": "You enter the convenience store",
+        "mapName": "abandonedHouse"
+      },
+      {
+        "tile": 8,
+        "type": "teleport",
+        "message": "You enter the convenience store",
+        "mapName": "convenienceStoreVillageWest"
+      },
+      {
+        "tile": 20,
+        "type": "teleport",
+        "message": "You step back to the village center",
+        "mapName": "villageSouth"
+      }
+    ]
+  },
+  "abandonedHouse": {
+    "name": "Abandoned House",
+    "playerPos": "row-4-col-3",
+    "tiles": [
+      "🕸","","🗝","","🕸",
+      ""," ","🤴🏼"," "," ",
+      "🕯",""," "," "," ",
+      ""," "," "," "," ",
+      ""," ","⬇"," ","🕯"
+    ],
+    "locations": [
+      {
+        "mapName": "villageSouth",
+        "prettyName": "⮕ Village South"
+      }
+    ],
+    "interactions": [
+      {
+        "tile": 4,
+        "type": "teleport",
+        "message": "You enter the convenience store",
+        "mapName": "abandonedHouse"
+      },
+      {
+        "tile": 23,
+        "type": "teleport",
+        "message": "",
+        "mapName": "villageWest"
+      },
+      {
+        "tile": 8,
+        "type": "message",
+        "message": "It is I, Prince Repeat."
+      }
+    ]
+  },
+
+  "convenienceStoreVillageWest": {
+    "name": "Convenience Store",
+    "playerPos": "row-4-col-3",
+    "tiles": [
+      "📦", "", "", "📦", "📦",
+      "📦", " ", "👹", " ", "📦",
+      " ", "📻", "⚽️", " 🍄", " ",
+      " ", " ", " ", " ", "",
+      "📦", " ", "⬇", "", "📦"
+    ],
+    "locations": [
+      {
+        "mapName": "villageWest",
+        "prettyName": "Exit Store"
+      }
+    ],
+    "interactions": [
+      {
+        "tile": 8,
+        "type": "message",
+        "message": "Whatcha looking at?<br> Buy something!"
+      },
+      {
+        "tile": 23,
+        "type": "teleport",
+        "message": "You enter the convenience store",
+        "mapName": "villageWest"
+      }
+    ]
+  },
+  "mountainCaves": {
+    "name": "Mountain Caves",
+    "playerPos": "row-4-col-3",
+    "tiles": [
+      "📦", "📦", "📦", "📦", "📦",
+      "📦", " ", "🐸", " ", "📦",
+      "📦", "📻", "⚽️", " ", "📦",
+      "📦", " ", " ", " ", "📦",
+      "📦", "📦", "⬇", "📦", "📦"
+    ],
+    "locations": [
+      {
+        "mapName": "villageEast",
+        "prettyName": "Exit Caves"
+      }
+    ],
+    "interactions": [
+      {
+        "tile": 23,
+        "type": "teleport",
+        "message": "",
+        "mapName": "villageEast"
+      }
+    ]
+  }
+}
