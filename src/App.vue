@@ -56,8 +56,8 @@ import mapData from './json/maps.json';
 
 export default {
   setup() {
-    let messageBoxText = ref('Testing out this message box')
-    let currentMap = ref('villageSouth')
+    let messageBoxText = ref('You awake on the shore...')
+    let currentMap = ref('shore')
     let currentMapData = ref(mapData[currentMap.value]);
 
     window.addEventListener("keydown", function(e){

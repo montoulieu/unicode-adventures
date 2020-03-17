@@ -206,8 +206,8 @@
   "villageEast": {
     "name": "Village - East",
     "tiles": [
-        "⛰"," ⛰","⛰","⛰","⛰",
-        "⛰","⛰","⛰","⬆","⛰",
+        "⛰"," ⛰","⛰","⬆","⛰",
+        "⛰","⛰","⛰","","⛰",
         "⬅"," "," "," ","🌴",
         "🌴","","","👱🏽‍♂️","🌴",
         "🌴", "🌴", "🌴", "🌴", "🌴"
@@ -215,12 +215,18 @@
     "locations": [
       {
         "mapName": "villageSouth",
-        "prettyName": "⬅ Village South"
+        "prettyName": "⬅ Village South",
+        "key": "left"
+      },
+      {
+        "mapName": "mountainCaves",
+        "prettyName": "⬆ Mountain Caves",
+        "key": "up"
       }
     ],
     "interactions": [
       {
-        "tile": 9,
+        "tile": 4,
         "type": "teleport",
         "message": "You enter the mountain caves.",
         "mapName": "mountainCaves"
@@ -235,6 +241,7 @@
   },
   "villageWest": {
     "name": "Village - West",
+    "playerPos": "row-4-col-3",
     "tiles": [
         "⛰"," ⛰","⛰","🏚","🏠",
         "⛰","⛰","🏪"," ","🏠",
@@ -350,7 +357,8 @@
     "locations": [
       {
         "mapName": "villageEast",
-        "prettyName": "Exit Caves"
+        "prettyName": "Exit Caves",
+        "key": "down"
       }
     ],
     "interactions": [
