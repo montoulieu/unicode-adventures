@@ -1,6 +1,10 @@
 {
   "shore": {
     "name": "Shore",
+    "sfx": {
+      "name": "loop-shore",
+      "volume": "0.5"
+    },
     "tiles": [
         "🌴","🌴","⬆","🌴","🌴",
         " "," "," "," ","🧳",
@@ -10,7 +14,7 @@
     ],
     "locations": [
       {
-        "mapName": "beachPass",
+        "mapName": "junglePass1",
         "prettyName": "⬆ Beach Pass",
         "key": "up"
       }
@@ -20,7 +24,7 @@
         "tile": 3,
         "type": "teleport",
         "message": "You enter the Beach Pass",
-        "mapName": "beachPass"
+        "mapName": "junglePass1"
       },
       {
         "tile": 11,
@@ -42,8 +46,12 @@
     ]
   },
 
-  "beachPass": {
-    "name": "Beach Pass",
+  "junglePass1": {
+    "name": "Jungle Pass",
+    "bgm": {
+      "name": "song-jungle-pass",
+      "volume": "1"
+    },
     "tiles": [
       "🌴","🌴","⬆","🌴","🌴",
       "🌴","🌴"," ","🌴","🌴",
@@ -53,8 +61,8 @@
     ],
     "locations": [
       {
-        "mapName": "villageSouth",
-        "prettyName": "⬆ Village South",
+        "mapName": "junglePass2",
+        "prettyName": "⬆ Jungle Pass",
         "key": "up"
       },
       {
@@ -67,8 +75,8 @@
       {
         "tile": 3,
         "type": "teleport",
-        "message": "You enter the Beach Pass",
-        "mapName": "villageSouth"
+        "message": "",
+        "mapName": "junglePass2"
       },
       {
         "tile": 23,
@@ -78,9 +86,213 @@
       }
     ]
   },
+  "junglePass2": {
+    "name": "Jungle Pass",
+    "bgm": {
+      "name": "song-jungle-pass",
+      "volume": "1"
+    },
+    "playerPos": "row-2-col-3",
+
+    "tiles": [
+      "🌴","🌴","🌴","🌴","🌴",
+      "⬅",""," ","","⮕",
+      "🌴","🌴"," ","🌴","🌴",
+      "🌴","🌴"," ","🌴","🌴",
+      "🌴","🌴","⬇","🌴","🌴"
+    ],
+    "locations": [
+      {
+        "mapName": "junglePass3",
+        "prettyName": "Jungle Pass",
+        "key": "left"
+      },
+      {
+        "mapName": "junglePass5",
+        "prettyName": "Jungle Pass",
+        "key": "right"
+      },
+      {
+        "mapName": "junglePass1",
+        "prettyName": "Jungle Pass",
+        "key": "down"
+      }
+    ],
+    "interactions": [
+      {
+        "tile": 6,
+        "type": "teleport",
+        "message": "",
+        "mapName": "junglePass3"
+      },
+      {
+        "tile": 10,
+        "type": "teleport",
+        "message": "",
+        "mapName": "junglePass5"
+      },
+      {
+        "tile": 23,
+        "type": "teleport",
+        "message": "",
+        "mapName": "junglePass1"
+      }
+    ]
+  },
+  "junglePass3": {
+    "name": "Jungle Pass",
+    "bgm": {
+      "name": "song-jungle-pass",
+      "volume": "1"
+    },
+    "playerPos": "row-2-col-3",
+    "tiles": [
+      "🌴","🌴","🌴","🌴","🌴",
+      "⬅",""," ","","⮕",
+      "🌴","🌴","🌴","🌴","🌴",
+      "🌴","🌴","🌴","🌴","🌴",
+      "🌴","🌴","🌴","🌴","🌴"
+    ],
+    "locations": [
+      {
+        "mapName": "junglePass4",
+        "prettyName": "Jungle Pass",
+        "key": "left"
+      },
+      {
+        "mapName": "junglePass2",
+        "prettyName": "Jungle Pass",
+        "key": "right"
+      }
+    ],
+    "interactions": [
+      {
+        "tile": 6,
+        "type": "teleport",
+        "message": "I don't think I should be here.",
+        "mapName": "junglePass4"
+      },
+      {
+        "tile": 10,
+        "type": "teleport",
+        "message": "",
+        "mapName": "junglePass2"
+      }
+    ]
+  },
+  "junglePass4": {
+    "name": "Jungle Pass",
+    "bgm": {
+      "name": "song-jungle-pass",
+      "volume": "1"
+    },
+    "playerPos": "row-2-col-4",
+    "tiles": [
+      "🌴","🌴","🌴","🌴","🌴",
+      "🌴","","🚧","","⮕",
+      "🌴","🚜"," ","🚧","🌴",
+      "🌴","🏗","📡"," ","🌴",
+      "🌴","🌴","🌴","🌴","🌴"
+    ],
+    "locations": [
+      {
+        "mapName": "junglePass3",
+        "prettyName": "Jungle Pass",
+        "key": "right"
+      }
+    ],
+    "interactions": [
+      {
+        "tile": 10,
+        "type": "teleport",
+        "message": "",
+        "mapName": "junglePass3"
+      }
+    ]
+  },
+  "junglePass5": {
+    "name": "Jungle Pass",
+    "bgm": {
+      "name": "song-jungle-pass",
+      "volume": "1"
+    },
+    "tiles": [
+      "🌴","🌴","🌴","⬆","🌴",
+      "🌴","","","","🌴",
+      "🌴"," "," ","","🌴",
+      "⬅"," ","","🌴","🌴",
+      "🌴","🌴","🌴","🌴","🌴"
+    ],
+    "locations": [
+      {
+        "mapName": "junglePass2",
+        "prettyName": "Jungle Pass",
+        "key": "left"
+      },
+      {
+        "mapName": "junglePass6",
+        "prettyName": "Jungle Pass",
+        "key": "up"
+      }
+    ],
+    "interactions": [
+      {
+        "tile": 16,
+        "type": "teleport",
+        "message": "",
+        "mapName": "junglePass2"
+      },
+      {
+        "tile": 4,
+        "type": "teleport",
+        "message": "",
+        "mapName": "junglePass6"
+      }
+    ]
+  },
+  "junglePass6": {
+    "name": "Jungle Pass",
+    "bgm": {
+      "name": "song-jungle-pass",
+      "volume": "1"
+    },
+    "playerPos": "row-3-col-4",
+    "tiles": [
+      "🌴","🌴","⬆","🌴","🌴",
+      "🌴","","","","🌴",
+      "🌴","","","","🌴",
+      "🌴","","","","🌴",
+      "🌴","🌴","🌴","⬇","🌴"
+    ],
+    "locations": [
+      {
+        "mapName": "junglePass3",
+        "prettyName": "Jungle Pass",
+        "key": "right"
+      }
+    ],
+    "interactions": [
+      {
+        "tile": 3,
+        "type": "teleport",
+        "message": "",
+        "mapName": "villageSouth"
+      },
+      {
+        "tile": 24,
+        "type": "teleport",
+        "message": "",
+        "mapName": "junglePass5"
+      }
+    ]
+  },
 
   "villageNorth": {
     "name": "Village - North",
+    "bgm": {
+      "name": "song-village",
+      "volume": "1"
+    },
     "tiles": [
         "🏠"," ","⬆","🌴","🌴",
         "🏠"," "," ",""," ",
@@ -102,7 +314,7 @@
         "prettyName": "⮕ Village East"
       },
       {
-        "mapName": "beachPass",
+        "mapName": "junglePass",
         "prettyName": "⬇ Beach Pass"
       }
     ],
@@ -129,12 +341,16 @@
         "tile": 23,
         "type": "teleport",
         "message": "You return to the Beach Pass",
-        "mapName": "beachPass"
+        "mapName": "junglePass"
       }
     ]
   },
   "villageSouth": {
     "name": "Village - South",
+    "bgm": {
+      "name": "song-village",
+      "volume": "1"
+    },
     "playerPos": "row-4-col-3",
     "tiles": [
         "🏠"," ","⬆","🌴","🌴",
@@ -160,7 +376,7 @@
         "key": "right"
       },
       {
-        "mapName": "beachPass",
+        "mapName": "junglePass",
         "prettyName": "⬇ Beach Pass",
         "key": "down"
       }
@@ -188,7 +404,7 @@
         "tile": 23,
         "type": "teleport",
         "message": "You return to the Beach Pass",
-        "mapName": "beachPass"
+        "mapName": "junglePass6"
       },
       {
         "tile": 9,
@@ -205,6 +421,10 @@
   },
   "villageEast": {
     "name": "Village - East",
+    "bgm": {
+      "name": "song-village",
+      "volume": "1"
+    },
     "tiles": [
         "⛰"," ⛰","⛰","⬆","⛰",
         "⛰","⛰","⛰","","⛰",
@@ -241,6 +461,10 @@
   },
   "villageWest": {
     "name": "Village - West",
+    "bgm": {
+      "name": "song-village",
+      "volume": "1"
+    },
     "playerPos": "row-4-col-3",
     "tiles": [
         "⛰"," ⛰","⛰","🏚","🏠",
@@ -316,6 +540,10 @@
 
   "convenienceStoreVillageWest": {
     "name": "Convenience Store",
+    "bgm": {
+      "name": "song-shady-store",
+      "vol": 1
+    },
     "playerPos": "row-4-col-3",
     "tiles": [
       "📦", "", "", "📦", "📦",

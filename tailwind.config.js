@@ -7,5 +7,7 @@
 module.exports = {
   theme: {},
   variants: {},
-  plugins: []
+  corePlugins: {
+    fontFamily: false,
+  },
 }
